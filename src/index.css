@@ -197,7 +197,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1920&q=80') center/cover no-repeat;
   background-color: var(--color-navy);
 }
 

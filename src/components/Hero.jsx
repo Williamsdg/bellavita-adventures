@@ -30,11 +30,15 @@ export default function Hero() {
         }}
       >
         <source
-          src="https://videos.pexels.com/video-files/4793987/4793987-uhd_2560_1440_25fps.mp4"
+          src="https://videos.pexels.com/video-files/4069480/4069480-uhd_2560_1440_25fps.mp4"
           type="video/mp4"
         />
         <source
-          src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4"
+          src="https://videos.pexels.com/video-files/4010941/4010941-uhd_2560_1440_25fps.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://videos.pexels.com/video-files/2035976/2035976-uhd_2560_1440_24fps.mp4"
           type="video/mp4"
         />
       </video>
