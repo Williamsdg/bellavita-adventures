@@ -23,11 +23,10 @@ export default function Hero() {
         loop
         playsInline
         preload="auto"
-        poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
-        onCanPlay={() => setVideoReady(true)}
+        onLoadedData={() => setVideoReady(true)}
         style={{
           opacity: videoReady ? 1 : 0,
-          transition: 'opacity 1.2s ease-in-out',
+          transition: 'opacity 1.5s ease-in-out',
         }}
       >
         <source
