@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 export default function Hero() {
+  const [videoReady, setVideoReady] = useState(false)
+
   const scrollToServices = () => {
     const el = document.getElementById('services')
     if (el) el.scrollIntoView({ behavior: 'smooth' })
@@ -19,8 +22,18 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="auto"
         poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+        onCanPlay={() => setVideoReady(true)}
+        style={{
+          opacity: videoReady ? 1 : 0,
+          transition: 'opacity 1.2s ease-in-out',
+        }}
       >
+        <source
+          src="https://videos.pexels.com/video-files/4793987/4793987-uhd_2560_1440_25fps.mp4"
+          type="video/mp4"
+        />
         <source
           src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4"
           type="video/mp4"
